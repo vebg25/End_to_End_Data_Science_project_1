@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vg498/MLOPS/End_to_End_Data_Science_project_1/mlruns/0/713381551ec0468fa034249b182d7033/artifacts
+end_time: 1729798701618
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 713381551ec0468fa034249b182d7033
+run_name: bouncy-calf-977
+run_uuid: 713381551ec0468fa034249b182d7033
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729798689477
+status: 3
+tags: []
+user_id: vg498

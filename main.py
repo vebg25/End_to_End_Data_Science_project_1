@@ -3,6 +3,8 @@ from src.Proj_1.pipeline.data_ingestion_pipeline import DataIngestionTrainingPip
 from src.Proj_1.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
 from src.Proj_1.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.Proj_1.pipeline.model_trainer_pipeline import ModelTrainingPipeline
+from src.Proj_1.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
+
 
 
 
@@ -49,3 +51,15 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+STAGE_NAME="Model evaluation Stage"
+
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = ModelEvaluationPipeline()
+    obj.initiate_model_evaluation()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
